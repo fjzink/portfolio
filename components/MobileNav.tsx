@@ -1,3 +1,8 @@
-const MobileNav = (): JSX.Element => <nav></nav>
+const MobileNav = (): JSX.Element => (
+  <div>
+    <nav></nav>
+    <button></button>
+  </div>
+)
 
 export default MobileNav

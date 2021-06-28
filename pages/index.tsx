@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import colors from '../colors'
-import { Nav } from '../components/Nav'
+import Nav from '../components/Nav'
+import MobileNav from '../components/MobileNav'
 
 const { text } = colors
 
@@ -24,9 +25,8 @@ export const Home = (): JSX.Element => (
         min-height: 100vh;
         padding: 0 0;
         display: grid;
-        grid-template-rows: 50px auto auto;
+        grid-template-rows: auto auto;
         grid-template-areas:
-          'menu'
           'main'
           'contact';
       }
