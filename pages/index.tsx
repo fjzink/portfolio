@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import colors from '../colors'
 import Nav from '../components/Nav'
-import MobileNav from '../components/MobileNav'
 
 const { text } = colors
 
@@ -14,18 +13,38 @@ export const Home = (): JSX.Element => (
     <Nav />
 
     <main>
-      <div id="about">about me</div>
-      <div id="skills">skills</div>
-      <div id="projects">projects</div>
+      <div id="about">
+        about me about me about me about me about me about me about me about me
+        about me about me about me about me about me about me about me about me
+        about me about me about me about me about me about me about me
+      </div>
+      <div id="skills">
+        skills skills skills skills skills skills skills skills skills skills
+        skills skills skills skills skills skills skills skills skills skills
+        skills skills skills skills skills skills skills skills skills skills
+        skills skills skills{' '}
+      </div>
+      <div id="projects">
+        projects projects projects projects projects projects projects projects
+        projects projects projects projects projects projects projects projects
+        projects projects projects projects projects projects projects projects
+        projects projects projects projects projects projects projects projects
+        projects projects projects projects projects{' '}
+      </div>
     </main>
     <div className="contact">contact info</div>
 
     <style jsx>{`
+      main div {
+        margin: 200px 0px;
+      }
+
       .container {
         min-height: 100vh;
         padding: 0 0;
         display: grid;
         grid-template-rows: auto auto;
+        grid-template-columns: 100vw;
         grid-template-areas:
           'main'
           'contact';
@@ -36,6 +55,7 @@ export const Home = (): JSX.Element => (
         padding: 1rem 1rem;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
       }
 
       .contact {
