@@ -69,7 +69,7 @@ const Nav = (): JSX.Element => {
           width: 1.8rem;
           margin: 0.2rem 0;
           transition: all 0.3s ease-in-out;
-          transform-origin: 1px;
+          transform-origin: 0px;
         }
 
         .bar-one {
