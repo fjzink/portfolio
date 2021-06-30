@@ -10,9 +10,15 @@ const Nav = (): JSX.Element => {
   return (
     <>
       <nav className={classnames({ open })}>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#about" onClick={() => setOpen(false)}>
+          About
+        </a>
+        <a href="#skills" onClick={() => setOpen(false)}>
+          Skills
+        </a>
+        <a href="#projects" onClick={() => setOpen(false)}>
+          Projects
+        </a>
       </nav>
       <button className="nav-button" onClick={() => setOpen(!open)}>
         <div className={classnames('bar-one', { open })} />
