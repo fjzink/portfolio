@@ -34,8 +34,8 @@ const Nav = (): JSX.Element => {
           align-items: center;
           opacity: 0;
           visibility: hidden;
-          transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out,
-            left 0.5s ease-in-out;
+          transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
+            left 0.3s ease-in-out;
         }
 
         nav.open {
@@ -49,10 +49,10 @@ const Nav = (): JSX.Element => {
           background-color: ${blue};
           border: 1px solid ${lBlue};
           border-radius: 50%;
-          height: 4rem;
-          width: 4rem;
-          bottom: 2rem;
-          right: 2rem;
+          height: 3.5rem;
+          width: 3.5rem;
+          bottom: 1.5rem;
+          right: 1.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -68,7 +68,7 @@ const Nav = (): JSX.Element => {
           height: 3px;
           width: 1.8rem;
           margin: 0.2rem 0;
-          transition: all 0.5s ease-in-out;
+          transition: all 0.3s ease-in-out;
           transform-origin: 1px;
         }
 
