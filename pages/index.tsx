@@ -22,14 +22,14 @@ export const Home = (): JSX.Element => (
         skills skills skills skills skills skills skills skills skills skills
         skills skills skills skills skills skills skills skills skills skills
         skills skills skills skills skills skills skills skills skills skills
-        skills skills skills{' '}
+        skills skills skills
       </div>
       <div id="projects">
         projects projects projects projects projects projects projects projects
         projects projects projects projects projects projects projects projects
         projects projects projects projects projects projects projects projects
         projects projects projects projects projects projects projects projects
-        projects projects projects projects projects{' '}
+        projects projects projects projects projects
       </div>
     </main>
     <div className="contact">contact info</div>
