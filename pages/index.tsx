@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import colors from '../colors'
 import Nav from '../components/Nav'
+import About from '../components/About'
 
 const { text } = colors
 
@@ -13,32 +14,13 @@ export const Home = (): JSX.Element => (
     <Nav />
 
     <main>
-      <div id="about">
-        about me about me about me about me about me about me about me about me
-        about me about me about me about me about me about me about me about me
-        about me about me about me about me about me about me about me
-      </div>
-      <div id="skills">
-        skills skills skills skills skills skills skills skills skills skills
-        skills skills skills skills skills skills skills skills skills skills
-        skills skills skills skills skills skills skills skills skills skills
-        skills skills skills
-      </div>
-      <div id="projects">
-        projects projects projects projects projects projects projects projects
-        projects projects projects projects projects projects projects projects
-        projects projects projects projects projects projects projects projects
-        projects projects projects projects projects projects projects projects
-        projects projects projects projects projects
-      </div>
+      <About />
+      <div id="skills">skills</div>
+      <div id="projects">projects</div>
     </main>
     <div className="contact">contact info</div>
 
     <style jsx>{`
-      main div {
-        margin: 200px 0px;
-      }
-
       .container {
         min-height: 100vh;
         padding: 0 0;
@@ -61,9 +43,6 @@ export const Home = (): JSX.Element => (
       .contact {
         grid-area: contact;
         padding: 1rem;
-      }
-
-      .projects {
       }
 
       @media only screen and (min-width: 500px) {
