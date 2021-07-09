@@ -7,7 +7,8 @@ const About = (): JSX.Element => (
     <h2 className="intro-heading">Hi, I&apos;m Joey Zink!</h2>
     <div className="profile">
       <img className="profile-pic" src="/profilepic.jpeg" />
-      <div className="who">
+      <div className="who-wrapper">
+        <h3 className="who-heading">Who I am</h3>
         <p className="description">
           I am a full stack engineer with experience in JavaScript, TypeScript,
           and React. I feel equally comfortable working on the frontend and
@@ -34,12 +35,21 @@ const About = (): JSX.Element => (
         color: ${blueGreen};
       }
 
-      .who {
+      .who-wrapper {
         padding: 1rem;
+      }
+
+      .who-heading {
+        font-size: 1.5rem;
+        margin: 0.25rem 0;
+        padding: 0.25rem 0;
+        border-bottom: 2px solid rgb(91, 91, 91);
+        border-bottom: 2px solid rgba(91, 91, 91, 0.5);
       }
 
       .description {
         font-size: 1.25rem;
+        margin: 0;
       }
 
       .profile {
@@ -58,6 +68,11 @@ const About = (): JSX.Element => (
       @media only screen and (min-width: 500px) {
         .profile {
           flex-direction: row;
+        }
+
+        .who-heading {
+          margin: 0.25rem 1rem;
+          padding: 0.5rem 0;
         }
 
         .description {
