@@ -34,8 +34,8 @@ export const Home = (): JSX.Element => (
 
       main {
         grid-area: main;
-        padding: 1rem 1rem;
         display: flex;
+        padding-top: 1rem;
         flex-direction: column;
         align-items: flex-start;
       }
@@ -47,7 +47,7 @@ export const Home = (): JSX.Element => (
 
       @media only screen and (min-width: 500px) {
         .container {
-          grid-template-columns: 1fr 2fr 1fr;
+          grid-template-columns: 1fr 4fr 1fr;
           grid-template-rows: 4rem auto;
           grid-template-areas:
             'menu menu menu'

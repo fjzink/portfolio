@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import classnames from 'classnames'
 import colors from '../colors'
 
-const { text, blue, lBlue } = colors
+const { text, blue, lBlue, dBlue } = colors
 
 const Nav = (): JSX.Element => {
   const [open, setOpen] = useState(false)
