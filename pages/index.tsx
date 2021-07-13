@@ -2,6 +2,7 @@ import Head from 'next/head'
 import colors from '../colors'
 import Nav from '../components/Nav'
 import About from '../components/About'
+import Skills from '../components/Skills'
 
 const { text } = colors
 
@@ -15,7 +16,7 @@ export const Home = (): JSX.Element => (
 
     <main>
       <About />
-      <div id="skills">skills</div>
+      <Skills />
       <div id="projects">projects</div>
     </main>
     <div className="contact">contact info</div>

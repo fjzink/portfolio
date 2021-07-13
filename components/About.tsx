@@ -41,10 +41,11 @@ const About = (): JSX.Element => (
 
       .who-heading {
         font-size: 1.5rem;
-        margin: 0.25rem 0;
-        padding: 0.25rem 0;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0;
         border-bottom: 2px solid rgb(91, 91, 91);
         border-bottom: 2px solid rgba(91, 91, 91, 0.5);
+        color: ${blueGreen};
       }
 
       .description {
