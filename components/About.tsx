@@ -1,6 +1,6 @@
 import colors from '../colors'
 
-const { blueGreen } = colors
+const { blueGreen, blue } = colors
 
 const About = (): JSX.Element => (
   <div id="about">
@@ -62,6 +62,7 @@ const About = (): JSX.Element => (
       }
 
       .profile-pic {
+        border: 4px solid ${blue};
         border-radius: 50%;
         max-width: 250px;
         max-height: 250px;
