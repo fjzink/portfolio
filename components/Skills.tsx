@@ -53,6 +53,7 @@ function renderSkills(skills: Skills) {
             margin: 0 1rem;
             background-color: ${blue};
             scroll-snap-align: start;
+            flex-grow: 1;
           }
 
           .skill-list {
@@ -98,6 +99,7 @@ const Skills = (): JSX.Element => (
       .skills-wrapper {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         overflow: auto;
         scroll-snap-type: x mandatory;
         scroll-padding-left: 1rem;
