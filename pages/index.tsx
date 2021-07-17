@@ -4,6 +4,7 @@ import Nav from '../components/Nav'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 const { text } = colors
 
@@ -20,8 +21,7 @@ export const Home = (): JSX.Element => (
       <Skills />
       <Projects />
     </main>
-    <div className="contact">contact info</div>
-
+    <Contact></Contact>
     <style jsx>{`
       .container {
         min-height: 100vh;
