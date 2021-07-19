@@ -12,6 +12,7 @@ const ProjectCard = (): JSX.Element => {
         .project-card {
           background-color: ${blue};
           border: 2px solid ${lBlue};
+          border-radius: 0.5rem;
         }
       `}</style>
     </div>

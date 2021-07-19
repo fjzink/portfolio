@@ -49,7 +49,7 @@ export const Home = (): JSX.Element => (
 
       @media only screen and (min-width: 500px) {
         .container {
-          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-columns: 1fr 3fr 1fr;
           grid-template-rows: 4rem auto;
           grid-template-areas:
             'menu menu menu'
