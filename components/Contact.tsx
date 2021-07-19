@@ -26,14 +26,18 @@ const Contact = (): JSX.Element => {
           width: 100%;
           display: flex;
           flex-direction: row;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
           padding: 1rem;
           padding-bottom: 2rem;
         }
 
         .contact-info > a {
-          margin: 0 1rem;
+          margin: 0 1.5rem;
+        }
+
+        .contact-info > a:first-child {
+          margin-left: 0;
         }
 
         @media only screen and (min-width: 500px) {
