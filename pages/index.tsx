@@ -3,6 +3,8 @@ import colors from '../colors'
 import Nav from '../components/Nav'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 const { text } = colors
 
@@ -17,10 +19,9 @@ export const Home = (): JSX.Element => (
     <main>
       <About />
       <Skills />
-      <div id="projects">projects</div>
+      <Projects />
     </main>
-    <div className="contact">contact info</div>
-
+    <Contact></Contact>
     <style jsx>{`
       .container {
         min-height: 100vh;
@@ -48,7 +49,7 @@ export const Home = (): JSX.Element => (
 
       @media only screen and (min-width: 500px) {
         .container {
-          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-columns: 1fr 3fr 1fr;
           grid-template-rows: 4rem auto;
           grid-template-areas:
             'menu menu menu'
