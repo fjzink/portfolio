@@ -14,6 +14,8 @@ function renderTech(techList: string[]) {
       {tech}
       <style jsx>{`
         .tech {
+          display: inline-block;
+          white-space: nowrap;
           border: 2px solid ${turquoise};
           background-color: ${lBlue};
           border-radius: 10px;

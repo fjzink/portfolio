@@ -55,8 +55,9 @@ const Projects = (): JSX.Element => {
 
         .projects-wrapper {
           display: grid;
-          grid-template-columns: 1fr;
+          grid-template-columns: calc(100vw - 2rem);
           gap: 1rem;
+          width: 100%;
         }
 
         .projects-header {
@@ -70,7 +71,7 @@ const Projects = (): JSX.Element => {
 
         @media only screen and (min-width: 500px) {
           .projects-wrapper {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, minmax(45%, 1fr));
           }
         }
       `}</style>
